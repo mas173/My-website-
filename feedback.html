@@ -5,19 +5,60 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>feedback</title>
-  <link rel="stylesheet" href="style.css">
+ <style>
+ body{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   width: 100%;
+height: 100vh;
+
+
+   
+ }
+ .boxes{
+   width: fit-content;
+   
+   background:#C9C9C9;
+   height: fit-content;
+   padding: 10px;
+   border: 2px solid #555558;
+   border-radius: 10px;
+   
+ }
+   
+ </style>
 </head>
 
+
 <body>
-  <div class="container">
-    <h1>feedback</h1>
-    <form class="netlify">
-    <input type="text" name="" id="feedback" placeholder="Submit here">
-   <div class="btn">
-     
- <button type="submit" class="sub">submit</button>   </div>
-    </form>
-  </div>
+  <div class="boxes">
+  <form  name="netlify" netlify>
+  <p>Enter name :
+    <label>
+      <input type="text" placeholder="Name">
+      
+    </label>
+  </p>
+  <p>Enter Email :
+    <label>
+      <input type="text" placeholder="Email">
+      
+    </label>
+  </p>
+  <p>feedback :
+    <label>
+      <input id="feedback" type="text" placeholder="Enter your feedback">
+      
+    </label>
+  </p>
+  <p>
+    <button type="submit">Submit</button>
+  </p>
+  </form>
+  
+</div>
 
 </body>
 
